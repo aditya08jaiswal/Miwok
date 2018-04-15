@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         TextView numbers = (TextView) findViewById(R.id.numbers);
 
         //Set a clicklistener on that View
-        numbers.setOnClickListener(new NumbersClickListener(){
+        numbers.setOnClickListener(new View.OnClickListener(){
 
            @Override
            public void onClick(View view) {
