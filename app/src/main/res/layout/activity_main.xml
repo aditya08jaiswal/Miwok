@@ -29,7 +29,6 @@
         android:text="@string/category_numbers"/>
        <!-- android:onClick="openNumbersList" --> <!-- To open new activity of Numbers -->
 
-
     <TextView
         android:id="@+id/family"
         style="@style/CategoryStyle"

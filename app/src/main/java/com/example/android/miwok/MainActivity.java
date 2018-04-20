@@ -15,6 +15,7 @@
  */
 package com.example.android.miwok;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -49,6 +50,50 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        //Find the View that shows the family category
+        TextView family = (TextView) findViewById(R.id.family);
+
+        //Set a clicklistener on that View
+        family.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view)  {
+
+                //Create a new Intent to open the {@link FamilyActivity}
+                Intent familyIntent =  new Intent(MainActivity.this, FamilyActivity.class);
+                startActivity(familyIntent);
+            }
+        });
+
+        //Find the View that shows the colors category
+        TextView colors = (TextView) findViewById(R.id.colors);
+
+        //Set a clicklistener on that View
+        colors.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view)  {
+
+                //Create a new Intent to open the {@link FamilyActivity}
+                Intent colorsIntent =  new Intent(MainActivity.this, ColorsActivity.class);
+                startActivity(colorsIntent);
+            }
+        });
+
+        //Find the View that shows the phrases category
+        TextView phrases = (TextView) findViewById(R.id.phrases);
+
+        //Set a clicklistener on that View
+        phrases.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view)  {
+
+                //Create a new Intent to open the {@link FamilyActivity}
+                Intent phrasesIntent =  new Intent(MainActivity.this, PhrasesActivity.class);
+                startActivity(phrasesIntent);
+            }
+        });
 
     }
 
