@@ -8,6 +8,9 @@ public class Word {
     /* Miwok translation for the word */
     private String mMiwokTranslation;
 
+    /* Audio resource ID for the word */
+    private int mAudioResourceId;
+
     /* Image Resource Id for the word */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
@@ -15,18 +18,19 @@ public class Word {
     private static final int NO_IMAGE_PROVIDED = -1;
 
     //constructor for two textViews
-    public Word(String defaultTranslation, String miwokTranslation) {
+    public Word(String defaultTranslation, String miwokTranslation, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mAudioResourceId = audioResourceId;
     }
 
     //constructor for two TextViews and one ImageView
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId) {
+    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceId = imageResourceId;
+        mAudioResourceId = audioResourceId;
     }
-
 
     /**
      * Get the default translation of the word
@@ -56,4 +60,10 @@ public class Word {
         return mImageResourceId != NO_IMAGE_PROVIDED;
         }
 
+    /**
+     * Return the audio resource ID of the word.
+     */
+    public int getAudioResourceId() {
+        return mAudioResourceId;
+    }
 }

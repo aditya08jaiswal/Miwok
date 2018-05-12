@@ -34,16 +34,16 @@ public class MainActivity extends AppCompatActivity {
         TextView numbers = (TextView) findViewById(R.id.numbers);
 
         //Set a clicklistener on that View
-        numbers.setOnClickListener(new View.OnClickListener(){
+        numbers.setOnClickListener(new View.OnClickListener() {
 
-           @Override
-           public void onClick(View view) {
+            @Override
+            public void onClick(View view) {
 
-               //Create a new Intent to open the {@link NumbersActivity}
-               Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
-               startActivity(numbersIntent);
+                //Create a new Intent to open the {@link NumbersActivity}
+                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                startActivity(numbersIntent);
 
-           }
+            }
 
         });
 
@@ -51,13 +51,13 @@ public class MainActivity extends AppCompatActivity {
         TextView family = (TextView) findViewById(R.id.family);
 
         //Set a clicklistener on that View
-        family.setOnClickListener(new View.OnClickListener(){
+        family.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View view)  {
+            public void onClick(View view) {
 
                 //Create a new Intent to open the {@link FamilyActivity}
-                Intent familyIntent =  new Intent(MainActivity.this, FamilyActivity.class);
+                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
                 startActivity(familyIntent);
             }
         });
@@ -66,13 +66,13 @@ public class MainActivity extends AppCompatActivity {
         TextView colors = (TextView) findViewById(R.id.colors);
 
         //Set a clicklistener on that View
-        colors.setOnClickListener(new View.OnClickListener(){
+        colors.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View view)  {
+            public void onClick(View view) {
 
                 //Create a new Intent to open the {@link FamilyActivity}
-                Intent colorsIntent =  new Intent(MainActivity.this, ColorsActivity.class);
+                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
                 startActivity(colorsIntent);
             }
         });
@@ -81,13 +81,13 @@ public class MainActivity extends AppCompatActivity {
         TextView phrases = (TextView) findViewById(R.id.phrases);
 
         //Set a clicklistener on that View
-        phrases.setOnClickListener(new View.OnClickListener(){
+        phrases.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View view)  {
+            public void onClick(View view) {
 
                 //Create a new Intent to open the {@link FamilyActivity}
-                Intent phrasesIntent =  new Intent(MainActivity.this, PhrasesActivity.class);
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
                 startActivity(phrasesIntent);
             }
         });
