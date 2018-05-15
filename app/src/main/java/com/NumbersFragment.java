@@ -87,15 +87,16 @@ public class NumbersFragment extends Fragment {
         // Create a list of words
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new com.example.android.miwok.Word("red", "weṭeṭṭi", R.drawable.color_red, R.raw.color_red));
-        words.add(new com.example.android.miwok.Word("green", "chokokki", R.drawable.color_green, R.raw.color_green));
-        words.add(new com.example.android.miwok.Word("brown", "ṭakaakki", R.drawable.color_brown, R.raw.color_brown));
-        words.add(new com.example.android.miwok.Word("gray", "ṭopoppi", R.drawable.color_gray, R.raw.color_gray));
-        words.add(new com.example.android.miwok.Word("black", "kululli", R.drawable.color_black, R.raw.color_black));
-        words.add(new com.example.android.miwok.Word("white", "kelelli", R.drawable.color_white, R.raw.color_white));
-        words.add(new com.example.android.miwok.Word("dusty yellow", "ṭopiisә", R.drawable.color_dusty_yellow, R.raw.color_dusty_yellow));
-        words.add(new com.example.android.miwok.Word("mustard yellow", "chiwiiṭә", R.drawable.color_mustard_yellow, R.raw.color_mustard_yellow));
-
+        words.add(new com.example.android.miwok.Word("one", "lutti", R.drawable.number_one, R.raw.number_one));
+        words.add(new com.example.android.miwok.Word("two", "otiiko", R.drawable.number_two, R.raw.number_two));
+        words.add(new com.example.android.miwok.Word("three", "tolookosu", R.drawable.number_three, R.raw.number_three));
+        words.add(new com.example.android.miwok.Word("four", "oyyisa", R.drawable.number_four, R.raw.number_four));
+        words.add(new com.example.android.miwok.Word("five", "massokka", R.drawable.number_five, R.raw.number_five));
+        words.add(new com.example.android.miwok.Word("six", "temmokka", R.drawable.number_six, R.raw.number_six));
+        words.add(new com.example.android.miwok.Word("seven", "kenekaku", R.drawable.number_seven, R.raw.number_seven));
+        words.add(new com.example.android.miwok.Word("eight", "kawinta", R.drawable.number_eight, R.raw.number_eight));
+        words.add(new com.example.android.miwok.Word("nine", "wo’e", R.drawable.number_nine, R.raw.number_nine));
+        words.add(new com.example.android.miwok.Word("ten", "na’aacha", R.drawable.number_ten, R.raw.number_ten));
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
         WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.category_numbers);
